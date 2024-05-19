@@ -4,7 +4,7 @@ import cv2
 cascade_path = './haarcascade_frontalface_default.xml'
 
 # 이미지 읽기
-image_path = './블랙핑크 지수 얼굴_10.jpg'
+image_path = './image/로켓펀치 소희/로켓펀치 소희_7.jpg'
 image = cv2.imread(image_path)
 
 # 그레이스케일 변환
