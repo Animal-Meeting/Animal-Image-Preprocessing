@@ -32,3 +32,9 @@ input_path = './2.resize_rescaled_images'
 
 ### 출력 디렉토리 경로
 output_path = './3.augmented_images'
+
+---
+ 
+ ### ✅ 최종적으로 모델학습에 사용할 이미지
+ 
+ 2.resize_rescaled_images 폴더에 있는 이미지 + 3.augmented_images 폴더 이미지
