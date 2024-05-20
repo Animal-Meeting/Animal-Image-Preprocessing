@@ -3,10 +3,10 @@ import numpy as np
 from tensorflow.keras.preprocessing.image import ImageDataGenerator, img_to_array, load_img, save_img
 
 # 입력 디렉토리 경로
-input_path = './detected_face'
+input_path = './1.detected_face'
 
 # 출력 디렉토리 경로
-output_path = './resize_rescaled_images'
+output_path = './2.resize_rescaled_images'
 
 # 이미지 크기 설정 (예: 256x256)
 img_width, img_height = 224, 224
