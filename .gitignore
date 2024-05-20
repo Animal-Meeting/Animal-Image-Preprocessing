@@ -164,5 +164,6 @@ cython_debug/
 /1.detected_face/*
 /2.detected_face_origin/*
 /3.augmented_images/*
+/최종 이미지/*
 *.png
 *.jpg

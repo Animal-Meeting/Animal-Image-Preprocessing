@@ -9,7 +9,7 @@ input_path = './detected_face'
 output_path = './resize_rescaled_images'
 
 # 이미지 크기 설정 (예: 256x256)
-img_width, img_height = 256, 256
+img_width, img_height = 224, 224
 
 # ImageDataGenerator를 사용하여 이미지 리스케일링 설정
 datagen = ImageDataGenerator(

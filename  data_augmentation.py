@@ -3,13 +3,13 @@ import numpy as np
 from tensorflow.keras.preprocessing.image import ImageDataGenerator, img_to_array, load_img, save_img
 
 # 입력 디렉토리 경로
-input_path = './rescaled_images'
+input_path = './resize_rescaled_images'
 
 # 출력 디렉토리 경로
 output_path = './augmented_images'
 
 # 이미지 크기 설정 (예: 256x256)
-img_width, img_height = 256, 256
+img_width, img_height = 224, 224
 
 # ImageDataGenerator를 사용하여 이미지 리스케일링 및 증강 설정
 datagen = ImageDataGenerator(
