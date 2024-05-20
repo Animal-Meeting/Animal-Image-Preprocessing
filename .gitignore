@@ -161,7 +161,8 @@ cython_debug/
 
 #custom
 /image/*
-/detected_face/*
-/detected_face_origin/*
+/1.detected_face/*
+/2.detected_face_origin/*
+/3.augmented_images/*
 *.png
 *.jpg
