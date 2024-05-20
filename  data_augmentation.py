@@ -1,6 +1,7 @@
 import os
 import numpy as np
 from tensorflow.keras.preprocessing.image import ImageDataGenerator, img_to_array, load_img, save_img
+import cv2
 
 # 입력 디렉토리 경로
 input_path = './2.resize_rescaled_images'
@@ -37,7 +38,8 @@ for folder in os.listdir(input_path):
         print("Start : " + input_dir)
         
         # 출력 디렉토리 경로 생성
-        output_dir = os.path.join(output_path, folder)
+        # output_dir = os.path.join(output_path, folder)
+        output_dir = output_path
         
         # 출력 디렉토리가 없으면 생성
         if not os.path.exists(output_dir):
@@ -46,6 +48,7 @@ for folder in os.listdir(input_path):
         # 입력 디렉토리의 이미지 파일들을 순회하면서 리사이즈, 리스케일링 및 증강
         for filename in os.listdir(input_dir):
             if filename.endswith('.jpg') or filename.endswith('.jpeg') or filename.endswith('.png'):
+                
                 image_path = os.path.join(input_dir, filename)
                 
                 try:
@@ -58,7 +61,7 @@ for folder in os.listdir(input_path):
                     i = 0
                     for batch in datagen.flow(x, batch_size=1, save_to_dir=output_dir, save_prefix=filename, save_format='jpg'):
                         i += 1
-                        if i > 5:  # 이미지당 5개의 증강된 샘플 생성
+                        if i > 2:  # 이미지당 2개의 증강된 샘플 생성
                             break
                 
                 except Exception as e:

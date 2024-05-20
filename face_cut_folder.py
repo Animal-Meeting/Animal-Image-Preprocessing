@@ -7,7 +7,7 @@ cascade_path = './haarcascade_frontalface_default.xml'
 
 
 # 입력 디렉토리 경로
-input_path = './image/여자 고양이상'
+input_path = './image'
 
 # 출력 디렉토리 경로
 output_path = './1.detected_face'
